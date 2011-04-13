@@ -1,0 +1,8 @@
+= timecolumn
+
+Adds a column to issue queries that contains the time spent on this issue.
+
+== Installation
+
+cd $REDMINE_HOME/vendor/plugins
+hg clone https://code.gocept.com/hg/public/redmine_timecolumn
