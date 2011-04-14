@@ -13,4 +13,16 @@ class TimeColumnTest < ActiveSupport::TestCase
     column = SpentTimeColumn.new
     assert_equal 154.25, column.value(issues(:issues_001))
   end
+
+  def test_estimated_no_value_yields_na
+    column = RemainingTimeColumn.new
+    assert_equal 'n/a', column.value(issues(:issues_001))
+  end
+
+  def test_estimated_value_yields_difference
+    issue = issues(:issues_001)
+    issue.estimated_hours = 200
+    column = RemainingTimeColumn.new
+    assert_equal 45.75, column.value(issue)
+  end
 end

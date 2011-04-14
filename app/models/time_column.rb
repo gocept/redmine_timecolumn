@@ -23,9 +23,7 @@ class RemainingTimeColumn < QueryColumn
   end
 
   def value(issue)
-    field = IssueCustomField.find_by_name('Estimated time')
-    estimated = issue.custom_value_for(field).value
-    estimated = estimated.to_f unless estimated.blank?
+    estimated = issue.estimated_hours
     estimated ? estimated - issue.spent_hours : 'n/a'
   end
 end

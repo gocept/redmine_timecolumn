@@ -1,6 +1,7 @@
 = timecolumn
 
-Adds a column to issue queries that contains the time spent on this issue.
+Adds two columns to issue queries, one that contains the time spent on this
+issue and one that contains the remaining time (estimated-spent).
 
 == Installation
 
