@@ -1,0 +1,4 @@
+# Geman strings go here for Rails i18n
+de:
+  field_spent_time: "Aufgewendete Zeit"
+  field_remaining_time: "Übrige Zeit"
