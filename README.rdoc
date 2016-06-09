@@ -6,4 +6,4 @@ issue and one that contains the remaining time (estimated-spent).
 == Installation
 
 cd $REDMINE_HOME/vendor/plugins
-hg clone https://code.gocept.com/hg/public/redmine_timecolumn
+hg clone https://bitbucket.org/gocept/redmine_timecolumn
